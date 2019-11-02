@@ -2,71 +2,100 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Show Tracker</title>
+    <title>Show Trackr</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <!-- My first web page -->
 
   <body>
     <header>
-      <span>Shot Tracker</span>
-      <ul>
-        <li><a href="features.html"> Features</a></li>
-        <li><a href="community.html"> Community</a></li>
-        <li><a href="get-started.html"> Get Started</a></li>
-        <li><a href="login.html"> Log in</a></li>
-        <li><a href="get-started.html"> GET STARTED</a></li>
-      </ul>
+      <nav class="navigation">
+        <span class="logo-style"
+          >Show<span class="logo-style2">Trackr</span></span
+        >
+
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="features.html"> Features</a>
+          </li>
+          <li class="navigation-item">
+            <a href="community.html"> Community</a>
+          </li>
+          <li class="navigation-item">
+            <a href="get-started.html"> Get Started</a>
+          </li>
+        </ul>
+
+        <div>
+          <a href="login.html"> Log in</a>
+          <button class="button">Get started</button>
+        </div>
+      </nav>
     </header>
 
-    <h1>Track your shows automatically</h1>
+    <div class="mainpage">
+      <div class="mainpage-left">
+        <div class="main-text">
+          <h1>
+            Track your shows <br />
+            automatically
+          </h1>
 
-    <p>
-      With ShowTrack you can track your favorite TV shows automatically,<br />
-      so you never loose track of your TV shows ever again. 🍿
-    </p>
+          <p>
+            With ShowTrack you can track your favorite TV shows
+            automatically,<br />
+            so you never loose track of your TV shows ever again. 🍿
+          </p>
+        </div>
 
-    <form action="">
-      <input type="email" placeholder="example@gmail.com" />
-      <button>Start tracking</button>
-    </form>
+        <form class="start-tracking" action="">
+          <input type="email" placeholder="example@gmail.com" />
+          <button>Start tracking</button>
+        </form>
 
-    <ul>
-      <li>
-        <a href="src/netflix.html">
-          <img src="img/netflix.png" width="26" alt="Netflix"
-        /></a>
-      </li>
-      <li>
-        <a href="src/apple.html">
-          <img src="img/apple.png" width="26" alt="Apple"
-        /></a>
-      </li>
-      <li>
-        <a href="src/android.html">
-          <img src="img/android.png" width="26" alt="Android"
-        /></a>
-      </li>
-      <li>
-        <a href="src/windows.html">
-          <img src="img/windows.png" width="26" alt="Windows"
-        /></a>
-      </li>
-      <li>
-        <a href="src/synology.html"
-          ><img src="img/synology.png" width="26" alt="Synology"
-        /></a>
-      </li>
-    </ul>
+        <p class="compatible-with">COMPATIBLE WITH</p>
+        <ul class="compatible">
+          <li>
+            <a href="src/netflix.html">
+              <img src="img/netflix.png" alt="Netflix"
+            /></a>
+          </li>
+          <li>
+            <a href="src/apple.html">
+              <img src="img/apple.png" alt="Apple" />
+            </a>
+          </li>
+          <li>
+            <a href="src/android.html">
+              <img src="img/android.png" alt="Android"
+            /></a>
+          </li>
+          <li>
+            <a href="src/windows.html">
+              <img src="img/windows.png" alt="Windows"
+            /></a>
+          </li>
+          <li>
+            <a href="src/synology.html"
+              ><img src="img/synology.png" alt="Synology"
+            /></a>
+          </li>
+        </ul>
+      </div>
 
-    <img src="img/iphone-x-mockup.png" alt="iphone x" />
+      <div class="mainpage-right">
+        <img src="img/iphone-x-mockup.png" alt="iphone x" />
+      </div>
+    </div>
 
     <!-- Part of the Features  -->
 
-    <div align="center">
-      <p>Features</p>
+    <div class="features-text">
+      <span>Features</span>
       <h2>
-        Built and customized for your habits
+        Built and customized <br />
+        for your habits
       </h2>
 
       <p>
@@ -77,169 +106,195 @@
       </p>
     </div>
 
-    <table>
-      <td align="center">
-        <img src="img/automated-tracking.png" width="" alt="Triangle" />
-        <h5>Automadet tracking</h5>
+    <div class="features-table">
+      <div>
+        <img class="shape-1" src="img/triangle.svg" alt="Triangle" />
+        <h5 class>Automated tracking</h5>
         <p>
-          Track your favorite shows automatically without switching between
-          apps.
+          Track your favorite shows automatically <br />
+          without switching between apps.
         </p>
-        <a href="src/automated-tracking.html">Lead more &gt; </a>
-      </td>
-      <td align="center">
-        <img src="img/machine-learning.png" alt="Shape" />
-        <h5>Machine learning</h5>
+        <a href="src/automated-tracking.html">Learn more &gt; </a>
+      </div>
+      <div>
+        <img class="shape-2" src="img/shape.svg" alt="Shape" />
+        <h5 class="small-text">Machine learning</h5>
         <p>
-          Get recommendations like never before, which are truly costomized for
-          your taste.
+          Get recommendations like never before, <br />
+          which are truly costomized for your taste.
         </p>
-        <a href="src/machine-learning.html">Lead more &gt; </a>
-      </td>
-      <td align="center">
-        <img src="img/smart-notification.png" alt="Smart notifications" />
-        <h5>Smart notifications</h5>
+        <a href="src/machine-learning.html">Learn more &gt; </a>
+      </div>
+      <div>
+        <img
+          class="shape-3"
+          src="img/smart-notifications.svg"
+          alt="Smart notifications"
+        />
+        <h5 class="small-text">Smart notifications</h5>
         <p>
-          Receive smart notifications exactly at the right moments when you need
-          them.
+          Receive smart notifications exactly at the <br />
+          right moments when you need them.
         </p>
-        <a href="src/smart-notification.html">Lead more &gt; </a>
-      </td>
-    </table>
+        <a href="src/smart-notification.html">Learn more &gt; </a>
+      </div>
+    </div>
 
-    <img src="img/rectangle1.svg" width="130" alt="rectangle1" />
-    <img src="img/rectangle2.svg" width="130" alt="rectangle2" />
-    <img src="img/rectangle3.svg" width="130" alt="rectangle3" />
-    <img src="img/rectangle4.svg" width="130" alt="rectangle4" />
-    <img src="img/rectangle5.svg" width="130" alt="rectangle5" />
-    <img src="img/rectangle6.svg" width="130" alt="rectangle6" />
-    <img src="img/rectangle7.svg" width="130" alt="rectangle7" />
+    <div class="poster">
+      <img src="img/rectangle1.svg" width="160" alt="rectangle1" />
+      <img src="img/rectangle2.svg" width="160" alt="rectangle2" />
+      <img src="img/rectangle3.svg" width="160" alt="rectangle3" />
+      <img src="img/rectangle4.svg" width="160" alt="rectangle4" />
+      <img src="img/rectangle5.svg" width="160" alt="rectangle5" />
+      <img src="img/rectangle6.svg" width="160" alt="rectangle6" />
+      <img src="img/rectangle7.svg" width="160" alt="rectangle7" />
+    </div>
 
-    <h3>
-      Easy-to-use interfaces <br />
-      on every platform
-    </h3>
+    <div class="easy">
+      <div class="easy-left">
+        <div class="easy-text">
+          <h3>
+            Easy-to-use interfaces <br />
+            on every platform
+          </h3>
 
-    <p>
-      Since most of our features work in a completely automated <br />
-      way, you will mainly use our apps to discover new TV shows <br />
-      recommended for you and discuss the most interesting <br />
-      episodes with like-minded people.
-    </p>
+          <p>
+            Since most of our features work in a completely automated way, you
+            will mainly use our apps to discover new TV shows recommended for
+            shows you and discuss the most interesting episodes with like-minded
+            people.
+          </p>
+        </div>
+        <ul>
+          <li>
+            <img src="img/dashboard.svg" alt="dashboard" />
+            <a href="src/cutmom.html"> Customized Dashboard</a>
+          </li>
+          <li>
+            <img src="img/group1.svg" alt="Day&Night Modes" />
+            <a href="src/automatic.html"> Automatic Day & Night Modes</a>
+          </li>
+          <li>
+            <img src="img/group2.svg" alt="Integrated Chat" />
+            <a href="src/inegrated.html"> Integrated Chat Platform</a>
+          </li>
+        </ul>
+      </div>
 
-    <ul>
-      <li>
-        <img src="img/dashboard.svg" alt="dashboard" />
-        <a href="src/cutmom.html"> Customized Dashboard</a>
-      </li>
-      <li>
-        <img src="img/group1.svg" alt="Day&Night Modes" />
-        <a href="src/automatic.html"> Automatic Day & Night Modes</a>
-      </li>
-      <li>
-        <img src="img/group2.svg" alt="Integrated Chat" />
-        <a href="src/inegrated.html"> Integrated Chat Platform</a>
-      </li>
-    </ul>
-
-    <img src="img/web-app-mockup.svg" alt="web app mockup" />
-    <img src="img/iphone-x-mockup.png" width="325" alt="iphone x" />
-
+      <div class="easy-right">
+        <div class="easy-right-img">
+          <img src="img/web-app-mockup.svg" alt="web app mockup" />
+        </div>
+        <div class="easy-right-img2">
+          <img src="img/iphone-x-mockup.png" alt="iphone x" />
+        </div>
+      </div>
+    </div>
     <!-- Part of the Community  -->
 
-    <p>Community</p>
+    <div class="community">
+      <div class="community-left">
+        <p>Community</p>
 
-    <h3>We believe in the <br />power of community</h3>
+        <h3>We believe in the <br />power of community</h3>
 
-    <p>
-      Our goal is to create a product and service that you’re <br />
-      satisfied with and use it every day. This is why we’re <br />
-      constantly working on our services to make it better <br />
-      every day and really listen to what our users has to say.
-    </p>
+        <p>
+          Our goal is to create a product and service that you’re <br />
+          satisfied with and use it every day. This is why we’re <br />
+          constantly working on our services to make it better <br />
+          every day and really listen to what our users has to say.
+        </p>
 
-    <a href="src/read-more-testimonials.html">Read more testimonials</a>
+        <a href="src/read-more-testimonials.html">Read more testimonials</a>
+      </div>
 
-    <div>
-      <p>
-        <img src="img/twitter.svg" alt="twitter" /> Patrick Martin
-        <img src="img/twitter.svg" alt="twitter" />
-      </p>
-      <p>
-        ShowTrackr is a real gem! I started using it a couple months ago and it
-        completely changed the way how I watch TV shows. I can only recommend
-        it! <br />
-      </p>
-      <p>Jan 18, 2018</p>
-    </div>
+      <div class="community-right">
+        <div class="col">
+          <div class="twit">
+            <p class="twit-p">
+              Patrick Martin
+              <img src="img/twit.svg" alt="twitter" />
+            </p>
+            <p>
+              ShowTrackr is a real gem! I started using it a couple months ago
+              and it completely changed the way how I watch TV shows. I can only
+              recommend it! <br />
+            </p>
+            <time>Jan 18, 2018</time>
+          </div>
 
-    <div>
-      <p>
-        <img src="img/twitter.svg" alt="twitter" /> Bruce Murphy
-        <img src="img/twitter.svg" alt="twitter" />
-      </p>
-      <p>
-        I use ShowTrackr every day, and it’s awesome! I track all of my TV shows
-        in it. :)
-      </p>
-      <p>Jan 18, 2018</p>
-    </div>
+          <div class="twit">
+            <p class="twit-p">
+              Bruce Murphy
+              <img src="img/twit.svg" alt="twitter" />
+            </p>
+            <p>
+              I use ShowTrackr every day, and it’s awesome! I track all of my TV
+              shows in it. :)
+            </p>
+            <time>Jan 18, 2018</time>
+          </div>
 
-    <div>
-      <p>
-        <img src="img/twitter.svg" alt="twitter" /> Crystal Perkins
-        <img src="img/twitter.svg" alt="twitter" />
-      </p>
-      <p>
-        ShowTrackr is a real gem! I started using it a couple months ago and it
-        completely changed the way how I watch TV shows. I can only recommend
-        it!
-      </p>
-      <p>Jan 18, 2018</p>
-    </div>
+          <div class="twit">
+            <p class="twit-p">
+              Crystal Perkins
+              <img src="img/twit.svg" alt="twitter" />
+            </p>
+            <p>
+              ShowTrackr is a real gem! I started using it a couple months ago
+              and it completely changed the way how I watch TV shows. I can only
+              recommend it!
+            </p>
+            <p>Jan 18, 2018</p>
+          </div>
+        </div>
 
-    <div>
-      <p>
-        <img src="img/twitter.svg" alt="twitter" /> Thomas Cruz
-        <img src="img/twitter.svg" alt="twitter" />
-      </p>
-      <p>
-        ShowTrackr is a real gem! I started using it a couple months ago and it
-        completely changed the way how I watch TV shows. I can only recommend
-        it!
-      </p>
-      <p>Jan 18, 2018</p>
-    </div>
+        <div class="col2">
+          <div class="twit">
+            <p class="twit-p">
+              Thomas Cruz
+              <img src="img/twit.svg" alt="twitter" />
+            </p>
+            <p>
+              ShowTrackr is a real gem! I started using it a couple months ago
+              and it completely changed the way how I watch TV shows. I can only
+              recommend it!
+            </p>
+            <p>Jan 18, 2018</p>
+          </div>
 
-    <div>
-      <p>
-        <img src="img/twitter.svg" alt="twitter" /> Gregory Wallace
-        <img src="img/twitter.svg" alt="twitter" />
-      </p>
-      <p>
-        I use ShowTrackr every day, and it’s awesome! I track all of my TV shows
-        in it. :)
-      </p>
-      <p>Jan 18, 2018</p>
-    </div>
+          <div class="twit">
+            <p class="twit-p">
+              Gregory Wallace
+              <img src="img/twit.svg" alt="twitter" />
+            </p>
+            <p>
+              I use ShowTrackr every day, and it’s awesome! I track all of my TV
+              shows in it. :)
+            </p>
+            <p>Jan 18, 2018</p>
+          </div>
 
-    <div>
-      <p>
-        <img src="img/twitter.svg" alt="twitter" /> Megan Walters
-        <img src="img/twitter.svg" alt="twitter" />
-      </p>
-      <p>
-        ShowTrackr is a real gem! I started using it a couple months ago and it
-        completely changed the way how I watch TV shows. I can only recommend
-        it!
-      </p>
-      <p>Jan 18, 2018</p>
+          <div class="twit">
+            <p class="twit-p">
+              Megan Walters
+              <img src="img/twit.svg" alt="twitter" />
+            </p>
+            <p>
+              ShowTrackr is a real gem! I started using it a couple months ago
+              and it completely changed the way how I watch TV shows. I can only
+              recommend it!
+            </p>
+            <p>Jan 18, 2018</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Part of the Get Started  -->
 
-    <div align="center">
-      <p>Get Started</p>
+    <div class="features-text">
+      <span>Get Started</span>
 
       <h2>
         Start tracking your TV <br />
@@ -254,17 +309,16 @@
         have to do is sit back, relax and enjoy your TV shows.
       </p>
 
-      <form action="">
+      <form class="start-tracking" action="">
         <input type="email" placeholder="example@gmail.com" />
-        <input type="button" value="Start Tracking" />
+        <button>Start tracking</button>
       </form>
     </div>
 
-    <br />
-    <footer align="center">
-      <img src="img/twitter.svg" alt="twitter" />
-      <img src="img/facebook.svg" alt="facebook" />
-      <img src="img/youtube.svg" alt="youtube" />
+    <footer class="footer">
+      <img class="footer-img" src="img/twitter.svg" alt="twitter" />
+      <img class="footer-img" src="img/facebook.svg" alt="facebook" />
+      <img class="footer-img" src="img/youtube.svg" alt="youtube" />
       <p>2018 All rights reserved — Designed by Daniel Korpai</p>
     </footer>
   </body>
