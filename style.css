@@ -104,6 +104,55 @@ main {
   height: 320px;
 }
 
+.mainpage:before {
+  border-radius: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to top, #32fbfc, #3214f2);
+  content: "";
+  opacity: 0.9;
+  position: absolute;
+  transform: rotate(-45deg);
+  z-index: -1;
+  left: -200px;
+  top: 700px;
+  width: 320px;
+  height: 320px;
+}
+
+.mainpage-right:before {
+  background-color: blue;
+  border-radius: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to top, #9c09db, #1c0fd7);
+  content: "";
+  overflow: hidden;
+  opacity: 0.9;
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: -1;
+  right: -230px;
+  top: -100px;
+  width: 550px;
+  height: 550px;
+}
+
+.mainpage-right:after {
+  background-color: blue;
+  border-radius: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to top, #f2c314, #fc3832);
+  content: "";
+  overflow: hidden;
+  opacity: 0.9;
+  position: absolute;
+  transform: rotate(65deg);
+  z-index: -2;
+  right: -230px;
+  top: -110px;
+  width: 550px;
+  height: 550px;
+}
+
 .mainpage-left {
   margin: 0 130px 0 170px;
 }
