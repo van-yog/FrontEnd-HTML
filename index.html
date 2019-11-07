@@ -5,45 +5,44 @@
   <head>
     <meta charset="UTF-8" />
     <title>Show Trackr</title>
-    <link rel="stylesheet" href="style.css" /> 
-    <script>
-      function getstarted() {
-        alert ('You push Get Started button');
-      }
-      function starttracking() {
-        alert ( 'You push Start Tracking button')
-      }
-    </script> 
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/transition.css" />
   </head>
 
-  <body>      
-    <!-- Navigation part -->
-    <header>
-      <nav class="navigation">
-        <span class="logo-style">
-          Show<span class="logo-style2">Trackr</span>
-        </span>
+  <body>
+    <script src="src/javascript/functions.js"></script>
 
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a href="#feature-page"> Features</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#community-page"> Community</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#get-started-page"> Get Started</a>
-          </li>
-        </ul>
+    <main class="main">
+      <!-- Navigation part -->
+      <header>
+        <nav class="navigation">
+          <span class="logo-style">
+            Show<span class="logo-style2">Trackr</span>
+          </span>
 
-        <div>
-          <a class="log-in" href="src/log-in.html">Log in</a>
-          <button class="button" onclick="getstarted()">Get started</button>
-        </div>
-      </nav>
-    </header>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="#feature-page"> Features</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#community-page"> Community</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#get-started-page"> Get Started</a>
+            </li>
+          </ul>
 
-    <main>
+          <div>
+            <a class="log-in" href="log-in.html">Log in</a>
+            <button class="button" onclick="getstarted()">Get started</button>
+          </div>
+        </nav>
+      </header>
+
       <!-- Part of the main page -->
       <div class="mainpage">
         <div class="mainpage-left">
@@ -62,7 +61,9 @@
 
           <form class="start-tracking" action="">
             <fieldset>
-              <p><label for="email">Email</label></p>
+              <p>
+                <label for="email">Email</label>
+              </p>
               <input type="email" placeholder="example@gmail.com" />
             </fieldset>
             <button onclick="starttracking()">Start tracking</button>
@@ -72,35 +73,35 @@
 
           <ul class="compatible">
             <li class="compatible-item">
-              <a href="src/netflix.html">
-                <img src="img/netflix.png" alt="Netflix"
+              <a target="_blank" href="//www.netflix.com">
+                <img src="src/img/netflix.png" alt="Netflix"
               /></a>
             </li>
             <li class="compatible-item">
-              <a href="src/apple.html">
-                <img src="img/apple.png" alt="Apple" />
+              <a target="_blank" href="//www.apple.com">
+                <img src="src/img/apple.png" alt="Apple" />
               </a>
             </li>
             <li class="compatible-item">
-              <a href="src/android.html">
-                <img src="img/android.png" alt="Android"
+              <a target="_blank" href="//www.android.com">
+                <img src="src/img/android.png" alt="Android"
               /></a>
             </li>
             <li class="compatible-item">
-              <a href="src/windows.html">
-                <img src="img/windows.png" alt="Windows"
+              <a target="_blank" href="//www.microsoft.com">
+                <img src="src/img/windows.png" alt="Windows"
               /></a>
             </li>
             <li class="compatible-item">
-              <a href="src/synology.html"
-                ><img src="img/synology.png" alt="Synology"
+              <a target="_blank" href="//www.synology.com"
+                ><img src="src/img/synology.png" alt="Synology"
               /></a>
             </li>
           </ul>
         </div>
 
         <div class="mainpage-right">
-          <img src="img/iphone-x-mockup.png" alt="iphone x" />
+          <img src="src/img/iphone-x-mockup.png" alt="iphone x" />
         </div>
       </div>
 
@@ -125,27 +126,28 @@
 
         <div class="features-table">
           <div>
-            <img class="shape-1" src="img/triangle.svg" alt="Triangle" />
+            <img class="shape-1" src="src/img/triangle.svg" alt="Triangle" />
+
             <h5 class="small-text">Automated tracking</h5>
             <p>
               Track your favorite shows automatically <br />
               without switching between apps.
             </p>
-            <a href="src/learn-more-automated.html">Learn more &gt; </a>
+            <a href="learn-more-automated.html">Learn more &gt; </a>
           </div>
           <div>
-            <img class="shape-2" src="img/shape.svg" alt="Shape" />
+            <img class="shape-2" src="src/img/shape.svg" alt="Shape" />
             <h5 class="small-text">Machine learning</h5>
             <p>
               Get recommendations like never before, <br />
               which are truly costomized for your taste.
             </p>
-            <a href="src/learn-more-machine.html">Learn more &gt; </a>
+            <a href="learn-more-machine.html">Learn more &gt; </a>
           </div>
           <div>
             <img
               class="shape-3"
-              src="img/smart-notifications.svg"
+              src="src/img/smart-notifications.svg"
               alt="Smart notifications"
             />
             <h5 class="small-text">Smart notifications</h5>
@@ -153,25 +155,44 @@
               Receive smart notifications exactly at the <br />
               right moments when you need them.
             </p>
-            <a href="src/learn-more-smart.html">Learn more &gt; </a>
+            <a href="learn-more-smart.html">Learn more &gt; </a>
           </div>
         </div>
 
         <div class="poster">
           <img
-            src="img/house_of_cards.svg"
+            class="poster-img"
+            src="src/img/house_of_cards.svg"
             alt="poster to film House of cards"
           />
           <img
-            src="img/game_of_thrones.svg"
+            class="poster-img"
+            src="src/img/game_of_thrones.svg"
             alt="poster to serial Game of thrones"
           />
-          <img src="img/flash.svg" alt="poster to film Flash" />
-          <img src="img/murde.svg" alt="poster to film Murde" />
-          <img src="img/black_mirror.svg" alt="poster to film Black mirror" />
-          <img src="img/westworld.svg" alt="poster to film Westworld" />
           <img
-            src="img/stranger_things.svg"
+            class="poster-img"
+            src="src/img/flash.svg"
+            alt="poster to film Flash"
+          />
+          <img
+            class="poster-img"
+            src="src/img/murde.svg"
+            alt="poster to film Murde"
+          />
+          <img
+            class="poster-img"
+            src="src/img/black_mirror.svg"
+            alt="poster to film Black mirror"
+          />
+          <img
+            class="poster-img"
+            src="src/img/westworld.svg"
+            alt="poster to film Westworld"
+          />
+          <img
+            class="poster-img"
+            src="src/img/stranger_things.svg"
             alt="poster to film Stranger things"
           />
         </div>
@@ -194,27 +215,35 @@
               </p>
             </div>
             <ul>
-              <li>
-                <img src="img/dashboard.svg" alt="dashboard" />
-                 Customized Dashboard
+              <li class="easy-advantages">
+                <img src="src/img/dashboard.svg" alt="dashboard" />
+                Customized Dashboard
               </li>
-              <li>
-                <img src="img/group1.svg" alt="Day&Night Modes" />
+              <li class="easy-advantages">
+                <img src="src/img/group1.svg" alt="Day&Night Modes" />
                 Automatic Day & Night Modes
               </li>
-              <li>
-                <img src="img/group2.svg" alt="Integrated Chat" />
+              <li class="easy-advantages">
+                <img src="src/img/group2.svg" alt="Integrated Chat" />
                 Integrated Chat Platform
+              </li>
             </ul>
           </div>
 
           <div class="easy-right">
             <div class="easy-right-img">
-              <img src="img/web-app-mockup.svg" alt="web app mockup" />
+              <img
+                src="src/img/web-app-mockup.svg"
+                width="650px"
+                alt="web app mockup"
+              />
             </div>
-            <div class="easy-right-img2">
-              <img src="img/iphone-x-mockup.png" alt="iphone x" />
-            </div>
+
+            <img
+              class="easy-right-img2"
+              src="src/img/iphone-x-mockup.png"
+              alt="iphone x"
+            />
           </div>
         </div>
       </section>
@@ -233,7 +262,7 @@
             every day and really listen to what our users has to say.
           </p>
 
-          <a href="src/read-more-testimonials.html">Read more testimonials</a>
+          <a href="read-more-testimonials.html">Read more testimonials</a>
         </div>
 
         <div class="community-right">
@@ -241,7 +270,20 @@
             <div class="twit">
               <p class="twit-p">
                 Patrick Martin
-                <img src="img/twit.svg" alt="twitter" />
+                <img src="src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                ShowTrackr is a real gem! I started using it a couple months ago
+                and it completely changed the way how I watch TV shows. I can
+                only recommend it! <br />
+              </p>
+              <time>Jan 18, 2018</time>
+            </div>
+
+            <div class="twit">
+              <p class="twit-p">
+                Patrick Martin
+                <img src="src/img/twit.svg" alt="twitter" />
               </p>
               <p>
                 ShowTrackr is a real gem! I started using it a couple months ago
@@ -254,7 +296,7 @@
             <div class="twit">
               <p class="twit-p">
                 Bruce Murphy
-                <img src="img/twit.svg" alt="twitter" />
+                <img src="src/img/twit.svg" alt="twitter" />
               </p>
               <p>
                 I use ShowTrackr every day, and it’s awesome! I track all of my
@@ -266,7 +308,33 @@
             <div class="twit">
               <p class="twit-p">
                 Crystal Perkins
-                <img src="img/twit.svg" alt="twitter" />
+                <img src="src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                ShowTrackr is a real gem! I started using it a couple months ago
+                and it completely changed the way how I watch TV shows. I can
+                only recommend it!
+              </p>
+              <time>Jan 18, 2018</time>
+            </div>
+
+            <div class="twit">
+              <p class="twit-p">
+                Crystal Perkins
+                <img src="src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                ShowTrackr is a real gem! I started using it a couple months ago
+                and it completely changed the way how I watch TV shows. I can
+                only recommend it!
+              </p>
+              <time>Jan 18, 2018</time>
+            </div>
+
+            <div class="twit">
+              <p class="twit-p">
+                Crystal Perkins
+                <img src="src/img/twit.svg" alt="twitter" />
               </p>
               <p>
                 ShowTrackr is a real gem! I started using it a couple months ago
@@ -281,7 +349,7 @@
             <div class="twit">
               <p class="twit-p">
                 Thomas Cruz
-                <img src="img/twit.svg" alt="twitter" />
+                <img src="src/img/twit.svg" alt="twitter" />
               </p>
               <p>
                 ShowTrackr is a real gem! I started using it a couple months ago
@@ -294,7 +362,7 @@
             <div class="twit">
               <p class="twit-p">
                 Gregory Wallace
-                <img src="img/twit.svg" alt="twitter" />
+                <img src="src/img/twit.svg" alt="twitter" />
               </p>
               <p>
                 I use ShowTrackr every day, and it’s awesome! I track all of my
@@ -306,7 +374,45 @@
             <div class="twit">
               <p class="twit-p">
                 Megan Walters
-                <img src="img/twit.svg" alt="twitter" />
+                <img src="src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                ShowTrackr is a real gem! I started using it a couple months ago
+                and it completely changed the way how I watch TV shows. I can
+                only recommend it!
+              </p>
+              <time>Jan 18, 2018</time>
+            </div>
+
+            <div class="twit">
+              <p class="twit-p">
+                Gregory Wallace
+                <img src="src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                I use ShowTrackr every day, and it’s awesome! I track all of my
+                TV shows in it. :)
+              </p>
+              <time>Jan 18, 2018</time>
+            </div>
+
+            <div class="twit">
+              <p class="twit-p">
+                Megan Walters
+                <img src="src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                ShowTrackr is a real gem! I started using it a couple months ago
+                and it completely changed the way how I watch TV shows. I can
+                only recommend it!
+              </p>
+              <time>Jan 18, 2018</time>
+            </div>
+
+            <div class="twit">
+              <p class="twit-p">
+                Thomas Cruz
+                <img src="src/img/twit.svg" alt="twitter" />
               </p>
               <p>
                 ShowTrackr is a real gem! I started using it a couple months ago
@@ -350,16 +456,18 @@
 
     <footer class="footer">
       <a href="//www.twitter.com"
-        ><img class="footer-img" src="img/twitter.svg" alt="twitter"
-      /></Integrated>
+        ><img class="footer-img" src="src/img/twitter.svg" alt="twitter"
+      /></a>
       <a href="//www.facebook.com"
-        ><img class="footer-img" src="img/facebook.svg" alt="facebook"
+        ><img class="footer-img" src="src/img/facebook.svg" alt="facebook"
       /></a>
       <a href="//www.youtube.com">
-        <img class="footer-img" src="img/youtube.svg" alt="youtube"
+        <img class="footer-img" src="src/img/youtube.svg" alt="youtube"
       /></a>
 
-      <p>2018 All rights reserved — Designed by Daniel Korpai</p>
+      <p class="footer-text">
+        2018 All rights reserved — Designed by Daniel Korpai
+      </p>
     </footer>
   </body>
 </html>
