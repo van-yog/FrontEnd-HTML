@@ -9,12 +9,14 @@
   opacity: 0.5;
 }
 
+/*
 .features-table a:hover {
   color: #7b22a1;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
+*/
 
 .footer-img:hover {
   transform: rotate(360deg) scale(2);
