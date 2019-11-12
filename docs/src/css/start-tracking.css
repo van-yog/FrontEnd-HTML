@@ -1,0 +1,39 @@
+.start-tracking {
+  display: flex;
+  margin-bottom: 130px;
+}
+
+.start-tracking .start-tracking__label {
+  color: #540cfa;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.start-tracking .start-tracking__email {
+  border-width: 0;
+}
+
+.start-tracking .start-tracking__fieldset {
+  border: 0;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.05);
+  height: 55px;
+  width: 310px;
+}
+
+.start-tracking .start-tracking__button {
+  background-color: #540cfa;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.05);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+.start-tracking .start-tracking__button:hover {
+  background-color: #7b22a1;
+  transition: all 0.2s ease-in;
+}

@@ -1,0 +1,52 @@
+/* Style of the part with text EASY */
+
+.easy {
+  display: flex;
+  justify-content: space-around;
+}
+
+.easy__left {
+  padding: 0 80px;
+}
+
+.easy__header {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.easy__paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.easy__list {
+  margin: 0;
+}
+
+.easy__list-item {
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.easy__list-item:last-child {
+  margin-bottom: auto;
+}
+
+.easy__list-item:hover {
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in;
+}
+
+.easy__right {
+  width: 600px;
+}
+.easy__list-img {
+  margin: 0 15px;
+}
+
+.easy__right-img {
+  margin-left: -100px;
+  margin-top: -370px;
+}

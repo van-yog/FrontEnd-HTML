@@ -1,0 +1,60 @@
+/*  Style of the navigation part */
+
+.navigation {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 85px;
+}
+
+.navigation .navigation__logo-style2,
+.navigation .navigation__logo-style {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navigation__logo-style2 {
+  color: #540cfa;
+}
+
+.navigation .navigation__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation .navigation__item {
+  font-size: 14px;
+  margin-right: 55px;
+}
+
+.navigation .navigation__login {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.navigation .navigation__item:hover,
+.navigation .navigation__login:hover {
+  text-decoration: underline;
+  transition: all 0.2s ease-in;
+}
+
+.navigation .navigation__item:last-child {
+  margin-right: auto;
+}
+
+.navigation .navigation__button {
+  background-color: #540cfa;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 30px;
+  padding: 5px 15px;
+}
+
+.navigation .navigation__button:hover {
+  background-color: #7b22a1;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
