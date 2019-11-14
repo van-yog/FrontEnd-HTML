@@ -31,3 +31,11 @@ a {
 .center-position {
   justify-content: center;
 }
+
+@media (max-width: 615px) {
+.center-position {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}

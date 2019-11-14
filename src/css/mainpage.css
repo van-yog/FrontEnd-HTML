@@ -2,6 +2,7 @@
 
 .mainpage {
   display: flex;
+  justify-content: space-around;
   margin-bottom: 160px;
 }
 
@@ -21,21 +22,25 @@
 }
 
 .mainpage .mainpage__left {
-  margin: 0 130px 0 170px;
-}
+  margin: 0 2%;
+  display: flex;
+  flex-direction: column;
+  height: 620px;
+  justify-content: center;
 
-.mainpage .mainpage__text {
-  margin-bottom: 30px;
 }
 
 .mainpage .mainpage__h {
   font-size: 70px;
   font-weight: 900;
+  margin: 10px 0;
 }
 
 .mainpage .mainpage__p {
   font-size: 21px;
   line-height: 1.5;
+  margin: 10px 0;
+  width: 460px;
 }
 
 .mainpage .mainpage__compatible-with {
@@ -43,6 +48,10 @@
   font-weight: 600;
   letter-spacing: 2px;
   opacity: 0.3;
+}
+
+.mainpage .mainpage__left .compatible {
+  justify-content: end;
 }
 
 .compatible {
@@ -70,6 +79,7 @@
 
 .mainpage__right {
   height: 620px;
+  width: 35%;
   position: relative;
 }
 
@@ -82,7 +92,7 @@
   position: absolute;
   transform: rotate(-28deg);
   z-index: -2;
-  right: -486px;
+  right: -325px;
   top: -278px;
   width: 587px;
   height: 622px;
@@ -97,8 +107,89 @@
   position: absolute;
   transform: rotate(-43deg);
   z-index: -1;
-  right: -495px;
+  right: -326px;
   top: -270px;
   width: 580px;
   height: 600px;
+}
+
+
+
+@media (max-width: 935px) { 
+ 
+  .mainpage {
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+  }
+  .mainpage .mainpage__left {
+  
+    height: 100%;
+    margin-bottom: 45px;
+  
+  }
+
+ 
+
+  .mainpage__right::before
+   {
+    visibility: hidden;
+  }
+
+  .mainpage__right:after {
+    border-radius: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to top, #1c0fd7, #9c09db);
+    content: "";
+    opacity: 0.9;
+    position: absolute;
+    transform: rotate(-43deg);
+    z-index: -1;
+    left: 600px;
+    top: -170px;
+    width: 580px;
+    height: 600px;
+  }
+
+  .mainpage__right {
+    width: auto;
+    justify-content: center;
+    position: relative;
+  }
+
+  .mainpage__right-img {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+
+  .mainpage .mainpage__p {
+    font-size: 21px;
+    
+  }
+  
+}
+
+@media (max-width: 615px)
+{
+  .mainpage .mainpage__left {
+    margin: 0 1%;
+  }
+  .mainpage__right-img {
+  
+  }
+
+  .mainpage .mainpage__h {
+    font-size: 42px;
+   
+  }
+
+  .mainpage .mainpage__p {
+    font-size: 18px;
+    width: 360px;
+  }
+
+  .compatible__img {
+    height: 18px;
+  }
+
 }

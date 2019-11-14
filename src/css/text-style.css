@@ -12,7 +12,10 @@
 .text-style__head {
   font-size: 60px;
   margin-top: 0;
-  margin-bottom: 30px;
+  a: 30px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text-style__paragraph {
@@ -21,4 +24,27 @@
   margin: 0;
   margin-bottom: 50px;
   opacity: 0.8;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 615px) {
+  .text-style {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .text-style__head {
+    text-align: left;
+    font-size: 35px;
+    width: 380px;
+    margin-left: 0;
+  }
+  .text-style__paragraph {
+    font-size: 18px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    width: 360px;
+  }
 }
