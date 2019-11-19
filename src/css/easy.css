@@ -45,6 +45,7 @@
 .easy__right {
   width: 30%;
 }
+
 .easy__list-img {
   margin: 0 15px;
 }
@@ -68,16 +69,14 @@
   }
 
   .easy__left {
-    margin-bottom: 40px ;
+    margin-bottom: 40px;
   }
 
   .easy__right {
     width: auto;
-    margin-left: auto ;
+    margin-left: auto;
     margin-right: auto;
   }
-  
-
 }
 
 @media (max-width: 615px) {
@@ -90,5 +89,4 @@
     font-size: 16px;
     width: 360px;
   }
-
 }

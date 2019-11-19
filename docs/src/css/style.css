@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  margin: 0;
+}
+
 .main {
   overflow: hidden;
   margin: auto;
@@ -33,9 +37,9 @@ a {
 }
 
 @media (max-width: 615px) {
-.center-position {
-  width: 360px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .center-position {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
