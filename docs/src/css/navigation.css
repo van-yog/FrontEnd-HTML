@@ -1,6 +1,8 @@
 /*  Style of the navigation part */
 
 .navigation {
+  position: sticky;
+  top: 0;
   align-items: center;
   background-color: #ffffff;
   display: flex;
