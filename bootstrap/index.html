@@ -6,11 +6,59 @@
   <head>
     <meta charset="UTF-8" />
     <title>Show Trackr</title>
+    <link rel="icon" href="../src/icon/van.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <style>
+      .opacity-30 {
+        opacity: 0.3;
+      }
+
+      .background__mockup {
+        height: 510px;
+        background-image: url("../src/img/web-app-mockup.svg");
+      }
+
+      .easy__img {
+        margin-left: -120px;
+        margin-top: 140px;
+        height: 550px;
+      }
+
+      .community {
+        height: 800px;
+        background-color: rgb(32, 32, 32);
+      }
+
+      /* Transitions for style */
+
+      .main__img:hover,
+      .transition__scale:hover {
+        transform: scale(1.3);
+        transition: all 0.2s ease;
+      }
+
+      .twitter:hover {
+        transform: scale(1.05);
+        transition: all 0.2s ease;
+      }
+
+      /* Standart padding for design landing */
+
+      .m60 {
+        margin-bottom: 60px;
+      }
+
+      .m90 {
+        margin-bottom: 90px;
+      }
+
+      .m120 {
+        margin-bottom: 120px;
+      }
+    </style>
   </head>
 
   <body>
@@ -20,104 +68,101 @@
       <!-- Navigation part -->
 
 
-      <div class="container-fluid m60">
+      <div class="container-fluid mt-1 m60">
         <div class="row d-flex justify-content-between align-items-center ">
 
           <div class="col offset-1">
-            <span class="">
-              Show<span class="">Trackr</span>
-            </span>
+            <h5 class="font-weight-bold h5">
+              Show<span class="text-primary">Trackr</span>
+            </h5>
           </div>
 
-          <div class="col-5 ">
-            <ul class="d-flex justify-content-center header__list">
-              <li class="header__item">
-                <a href="#feature-page"> Features</a>
+          <div class="col-5 font-weight-light ">
+            <ul class="d-flex justify-content-center header__list list-unstyled m-0">
+              <li class="ml-3 mr-3 ">
+                <a class="text-dark" href="#feature-page"> Features</a>
               </li>
-              <li class="header__item">
-                <a href="#community-page"> Community</a>
+              <li class="ml-3 mr-3">
+                <a class="text-dark" href="#community-page"> Community</a>
               </li>
-              <li class="header__item">
-                <a href="#get-started-page"> Get Started</a>
+              <li class="ml-3 mr-3">
+                <a class="text-dark" href="#get-started-page"> Get Started</a>
               </li>
             </ul>
           </div>
 
-          <div class="col-4 d-flex justify-content-end">
+          <div class="col-4 d-flex justify-content-end align-items-center">
             <div>
-              <a class="" href="log-in.html">Log in</a>
+              <a class="text-dark font-weight-bold" href="log-in.html">Log in</a>
             </div>
-            <div class="col-8">
-              <button class="" onclick="getstarted()">
+            <div class="col-8 ">
+              <button class="bg-primary text-white border border-primary rounded p-1 pl-3 pr-3" onclick="getstarted()">
                 Get started
               </button>
             </div>
           </div>
-
         </div>
       </div>
 
-
-
       <!-- Part of the main page -->
-      <div class="container">
+      <div class="container m90">
         <div class="row d-flex justify-content-around">
 
           <div class="col-8 d-flex flex-column justify-content-around main__left">
             <div>
-              <p class="h1">
+              <h1 class="display-3 font-weight-bold mb-4">
                 Track your shows <br />
                 automatically
-              </p>
+              </h1>
 
-              <p class="col-6 p-0 mb-4">
+              <p class="h4 font-weight-lighter col-8 p-0 mb-5">
                 With ShowTrack you can track your favorite TV shows
                 automatically, so you never loose track of your TV
                 shows ever again. 🍿
               </p>
 
-              <form class="" action="">
-                <fieldset class="">
-                  <label class="" for="email">
+              <form class="d-flex" action="">
+                <fieldset class="col-4 d-flex flex-column ">
+                  <label class="text-primary m-0 font-weight-bold" for="email">
                     Email
                   </label>
-                  <input class="" type="email" placeholder="example@gmail.com" />
+                  <input class="border-0" type="email" placeholder="example@gmail.com" />
                 </fieldset>
-                <button class="" onclick="starttracking()">
+                <button class="bg-primary text-white border border-primary rounded p-1 pl-3 pr-3"
+                  onclick="starttracking()">
                   Start tracking
                 </button>
               </form>
             </div>
 
-            <div class="">
-              <p class="">COMPATIBLE WITH</p>
+            <div>
+              <p class="text-uppercase text-black-50">compatible with</p>
 
-              <ul class="row d-flex justify-content-around col-8 p-0">
-                <li class="">
+              <ul class="row col-8 d-flex justify-content-between list-unstyled m-0 p-0 opacity-30">
+                <li class="main__img">
                   <a target="_blank" href="//www.netflix.com">
-                    <img class="compatible__img" src="../src/img/netflix.png" alt="Netflix" /></a>
+                    <img class="compatible__img " src="../src/img/netflix.png" alt="Netflix" /></a>
                 </li>
-                <li class="">
+                <li class="main__img">
                   <a target="_blank" href="//www.apple.com">
                     <img class="compatible__img" src="../src/img/apple.png" alt="Apple" />
                   </a>
                 </li>
-                <li class="">
+                <li class="main__img">
                   <a target="_blank" href="//www.android.com">
                     <img class="compatible__img" src="../src/img/android.png" alt="Android" /></a>
                 </li>
-                <li class="">
+                <li class="main__img">
                   <a target="_blank" href="//www.microsoft.com">
                     <img class="compatible__img" src="../src/img/windows.png" alt="Windows" /></a>
                 </li>
-                <li class="">
+                <li class="main__img">
                   <a target="_blank" href="//www.synology.com"><img class="compatible__img"
                       src="../src/img/synology.png" alt="Synology" /></a>
                 </li>
               </ul>
             </div>
           </div>
-
 
           <div class="ml-auto mr-auto col-4 main__right">
             <img class="img-fluid" src="../src/img/iphone-x-mockup.png" alt="iphone x" />
@@ -127,20 +172,20 @@
 
       <!-- Part of the Features  -->
 
-      <div class="container ">
-        <div class="row   text-center justify-content-center">
+      <div class="container m90">
+        <div class="row text-center justify-content-center">
           <section class="" id="feature-page">
 
-            <div class="col-6 ml-auto mr-auto">
-              <span class="">Features</span>
-              <h2 class="">
-                Built and customized
+            <div class="col ml-auto mr-auto m60">
+              <span class="font-weight-light">Features</span>
+              <h2 class="display-4 font-weight-bold mb-4">
+                Built and customized <br>
                 for your habits
               </h2>
 
-              <p class="">
-                ShowTrack's built-in machine learning and context-aware features
-                guarantee that all the notifications and recommendations are always
+              <p class="ml-auto mr-auto">
+                ShowTrack's built-in machine learning and context-aware features<br>
+                guarantee that all the notifications and recommendations are always<br>
                 delivered to you in the perfect moment.
               </p>
             </div>
@@ -149,43 +194,47 @@
               <div class="col-4">
                 <img class="" src="../src/img/triangle.svg" alt="Triangle" />
 
-                <h5 class="">Automated tracking</h5>
-                <p class="">
-                  Track your favorite shows automatically <br />
-                  without switching between apps.
+                <h6>Automated tracking</h6>
+                <p><small>
+                    Track your favorite shows automatically <br />
+                    without switching between apps.
+                  </small>
                 </p>
-                <a class="" href="learn-more-automated.html">Learn more &gt;
+                <a href="learn-more-automated.html">Learn more &gt;
                 </a>
               </div>
 
               <div class="col-4">
-                <img class="" src="../src/img/shape.svg" alt="Shape" />
-                <h5 class="">Machine learning</h5>
-                <p class="">
-                  Get recommendations like never before, <br />
-                  which are truly costomized for your taste.
+                <img src="../src/img/shape.svg" alt="Shape" />
+                <h6>Machine learning</h6>
+                <p>
+                  <small>
+                    Get recommendations like never before,
+                    which are truly costomized for your taste.
+                  </small>
                 </p>
-                <a class="" href="learn-more-machine.html">Learn more &gt;
+                <a href="learn-more-machine.html">Learn more &gt;
                 </a>
               </div>
 
               <div class="col-4">
                 <img class="" src="../src/img/smart-notifications.svg" alt="Smart notifications" />
-                <h5 class="">Smart notifications</h5>
-                <p class="">
-                  Receive smart notifications exactly at the <br />
-                  right moments when you need them.
+                <h6>Smart notifications</h6>
+                <p>
+                  <small>
+                    Receive smart notifications exactly at the <br />
+                    right moments when you need them.
+                  </small>
                 </p>
-                <a class="" href="learn-more-smart.html">Learn more &gt;
+                <a href="learn-more-smart.html">Learn more &gt;
                 </a>
               </div>
             </div>
           </section>
-
         </div>
       </div>
 
-      <div class="container-fluid m60">
+      <div class="container-fluid overflow-auto m90">
         <div class="row d-flex flex-nowrap">
           <img class="img-fluid" src="../src/img/house_of_cards.svg" alt="poster to film House of cards" />
           <img class="img-fluid" src="../src/img/game_of_thrones.svg" alt="poster to serial Game of thrones" />
@@ -197,232 +246,188 @@
         </div>
       </div>
 
+      <div class="container-fluid m120  ">
+        <div class="row d-flex flex-nowrap">
+          <div class=" col offset-1 my-auto">
 
-      <div class="container-fluid m60  ">
-        <div class="row d-flex flex-nowrap overflow__hidden">
-          <div class=" col">
-            <div class="easy__text">
-              <h3 class="col-6 offset-1">
-                Easy-to-use interfaces <br />
-                on every platform
-              </h3>
+            <p class="col-10 h1 font-weight-bold mb-4">
+              Easy-to-use interfaces
+              on every platform
+            </p>
 
-              <p class="col-8 offset-1 ">
-                Since most of our features work in a completely automated
-                way,
-                you will mainly use our apps to discover new TV showsbr
-                recommended for shows you and discuss the most interesting
-                episodes with like-minded people.
-              </p>
-            </div>
+            <p class="col-10 mb-5 ">
+              Since most of our features work in a completely automated
+              way,
+              you will mainly use our apps to discover new TV shows
+              recommended for shows you and discuss the most interesting
+              episodes with like-minded people.
+            </p>
 
-
-            <ul class="col-8 offset-1">
-              <li class="easy__list-item">
-                <img class="easy__list-img" src="../src/img/dashboard.svg" alt="dashboard" />
+            <ul class="col list-unstyled ">
+              <li class="m-4">
+                <img class="img-fluid" src="../src/img/dashboard.svg" alt="dashboard" />
                 Customized Dashboard
               </li>
-              <li class="easy__list-item">
-                <img class="easy__list-img" src="../src/img/group1.svg" alt="Day&Night Modes" />
+              <li class="m-4">
+                <img class="img-fluid" src="../src/img/group1.svg" alt="Day&Night Modes" />
                 Automatic Day & Night Modes
               </li>
-              <li class="easy__list-item">
-                <img class="easy__list-img" src="../src/img/group2.svg" alt="Integrated Chat" />
+              <li class="m-4">
+                <img class="img-fluid" src="../src/img/group2.svg" alt="Integrated Chat" />
                 Integrated Chat Platform
               </li>
             </ul>
           </div>
 
-          <div class=" col-6 easy__right overflow__hidden">
-            <div>
-              <img class="img-fluid" src="../src/img/web-app-mockup.svg" alt="">
+          <div class=" col-6  overflow__hidden">
+            <div class="col background__mockup m120">
+              <img class="img-fluid easy__img" src="../src/img/iphone-x-mockup.png" alt="iphone x" />
             </div>
-
-            <!-- <div class="easy__right-center">
-              <img class="easy__right-img" src="../src/img/iphone-x-mockup.png" alt="iphone x" />
-            </div> -->
           </div>
         </div>
       </div>
 
       <!-- Part of the Community  -->
 
-      <div class="container-fluid">
-        <div class="row d-flex community bg-dark m60 text-light align-items-center">
-
+      <div class="container-fluid overflow-hidden m120">
+        <div class="row d-flex community text-light align-items-center " id="community-page">
 
           <div class="col-4 offset-1 ">
-            <span class="">Community</span>
+            <span class="font-weight-light mb-4">Community</span>
 
-            <h3 class="">
+            <p class="h1 font-weight-bold mb-4">
               We believe in the <br />power of community
-            </h3>
+            </p>
 
-            <p class="">
+            <p class="mb-4">
               Our goal is to create a product and service that you’re
               satisfied with and use it every day. This is why we’re
               constantly working on our services to make it better
               every day and really listen to what our users has to say.
             </p>
 
-            <a class="" href="read-more-testimonials.html">Read more testimonials</a>
+            <button class="bg-primary text-white border border-primary rounded p-1 pl-3 pr-3" onclick="starttracking()">
+              Read more testimonials
+            </button>
           </div>
 
-          <div class="col-3 offset-1">
-            <div class="">
-              <div class="">
-                <p class="-p">
-                  Patrick Martin
-                  <img class="community__img" src="../src/img/twit.svg" alt="twitter" />
-                </p>
-                <p class="">
+          <div class="col-3 offset-1 p-0 ">
+            <div class="bg-dark rounded p-4  m-2 mb-3 text-light twitter">
+              <p>
+                Patrick Martin
+                <img class="img-fluid pb-1" src="../src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                <small>
                   ShowTrackr is a real gem! I started using it a couple months ago
                   and it completely changed the way how I watch TV shows. I can
                   only recommend it! <br />
-                </p>
-                <time class="community__time">Jan 18, 2018</time>
-              </div>
+                </small>
+              </p>
+              <time>Jan 18, 2018</time>
             </div>
-
-            <div class="community__col">
-              <div class="community__twit">
-                <p class="community__twit-p">
-                  Patrick Martin
-                  <img class="community__img" src="../src/img/twit.svg" alt="twitter" />
-                </p>
-                <p class="community__twit-paragraph">
+            <div class="bg-dark rounded p-4 m-2 mb-3 text-light twitter">
+              <p>
+                Patrick Martin
+                <img class="img-fluid pb-1" src="../src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                <small>
                   ShowTrackr is a real gem! I started using it a couple months ago
                   and it completely changed the way how I watch TV shows. I can
                   only recommend it! <br />
-                </p>
-                <time class="community__time">Jan 18, 2018</time>
-              </div>
+                </small>
+              </p>
+              <time>Jan 18, 2018</time>
             </div>
-
-            <div class="community__col">
-              <div class="community__twit">
-                <p class="community__twit-p">
-                  Patrick Martin
-                  <img class="community__img" src="../src/img/twit.svg" alt="twitter" />
-                </p>
-                <p class="community__twit-paragraph">
+            <div class="bg-dark rounded p-4 m-2 mb-3 text-light twitter">
+              <p>
+                Patrick Martin
+                <img class="img-fluid pb-1" src="../src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                <small>
                   ShowTrackr is a real gem! I started using it a couple months ago
                   and it completely changed the way how I watch TV shows. I can
                   only recommend it! <br />
-                </p>
-                <time class="community__time">Jan 18, 2018</time>
-              </div>
+                </small>
+              </p>
+              <time>Jan 18, 2018</time>
             </div>
-
-            <div class="community__col">
-              <div class="community__twit">
-                <p class="community__twit-p">
-                  Patrick Martin
-                  <img class="community__img" src="../src/img/twit.svg" alt="twitter" />
-                </p>
-                <p class="community__twit-paragraph">
+            <div class="bg-dark rounded p-4 m-2 mb-3 text-light twitter">
+              <p>
+                Patrick Martin
+                <img class="img-fluid pb-1" src="../src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                <small>
                   ShowTrackr is a real gem! I started using it a couple months ago
                   and it completely changed the way how I watch TV shows. I can
                   only recommend it! <br />
-                </p>
-                <time class="community__time">Jan 18, 2018</time>
-              </div>
-            </div>
-
-            <div class="community__col">
-              <div class="community__twit">
-                <p class="community__twit-p">
-                  Patrick Martin
-                  <img class="community__img" src="../src/img/twit.svg" alt="twitter" />
-                </p>
-                <p class="community__twit-paragraph">
-                  ShowTrackr is a real gem! I started using it a couple months ago
-                  and it completely changed the way how I watch TV shows. I can
-                  only recommend it! <br />
-                </p>
-                <time class="community__time">Jan 18, 2018</time>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-3">
-            <div class="community__col">
-              <div class="community__twit">
-                <p class="community__twit-p">
-                  Patrick Martin
-                  <img class="community__img" src="../src/img/twit.svg" alt="twitter" />
-                </p>
-                <p class="community__twit-paragraph">
-                  ShowTrackr is a real gem! I started using it a couple months ago
-                  and it completely changed the way how I watch TV shows. I can
-                  only recommend it! <br />
-                </p>
-                <time class="community__time">Jan 18, 2018</time>
-              </div>
-            </div>
-
-            <div class="community__col">
-              <div class="community__twit">
-                <p class="community__twit-p">
-                  Patrick Martin
-                  <img class="community__img" src="../src/img/twit.svg" alt="twitter" />
-                </p>
-                <p class="community__twit-paragraph">
-                  ShowTrackr is a real gem! I started using it a couple months ago
-                  and it completely changed the way how I watch TV shows. I can
-                  only recommend it! <br />
-                </p>
-                <time class="community__time">Jan 18, 2018</time>
-              </div>
-            </div>
-
-            <div class="community__col">
-              <div class="community__twit">
-                <p class="community__twit-p">
-                  Patrick Martin
-                  <img class="community__img" src="../src/img/twit.svg" alt="twitter" />
-                </p>
-                <p class="community__twit-paragraph">
-                  ShowTrackr is a real gem! I started using it a couple months ago
-                  and it completely changed the way how I watch TV shows. I can
-                  only recommend it! <br />
-                </p>
-                <time class="community__time">Jan 18, 2018</time>
-              </div>
-            </div>
-
-            <div class="community__col">
-              <div class="community__twit">
-                <p class="community__twit-p">
-                  Patrick Martin
-                  <img class="community__img" src="../src/img/twit.svg" alt="twitter" />
-                </p>
-                <p class="community__twit-paragraph">
-                  ShowTrackr is a real gem! I started using it a couple months ago
-                  and it completely changed the way how I watch TV shows. I can
-                  only recommend it! <br />
-                </p>
-                <time class="community__time">Jan 18, 2018</time>
-              </div>
-            </div>
-
-            <div class="community__col">
-              <div class="community__twit">
-                <p class="community__twit-p">
-                  Patrick Martin
-                  <img class="community__img" src="../src/img/twit.svg" alt="twitter" />
-                </p>
-                <p class="community__twit-paragraph">
-                  ShowTrackr is a real gem! I started using it a couple months ago
-                  and it completely changed the way how I watch TV shows. I can
-                  only recommend it! <br />
-                </p>
-                <time class="community__time">Jan 18, 2018</time>
-              </div>
+                </small>
+              </p>
+              <time>Jan 18, 2018</time>
             </div>
           </div>
 
+          <div class="col-3 p-0 m-0 ">
+            <div class="bg-dark rounded p-4 m-2 mb-3 text-light twitter">
+              <p>
+                Patrick Martin
+                <img class="img-fluid pb-1" src="../src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                <small>
+                  ShowTrackr is a real gem! I started using it a couple months ago
+                  and it completely changed the way how I watch TV shows. I can
+                  only recommend it! <br />
+                </small>
+              </p>
+              <time>Jan 18, 2018</time>
+            </div>
+            <div class="bg-dark rounded p-4 m-2 mb-3 text-light twitter">
+              <p>
+                Patrick Martin
+                <img class="img-fluid pb-1" src="../src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                <small>
+                  ShowTrackr is a real gem! I started using it a couple months ago
+                  and it completely changed the way how I watch TV shows. I can
+                  only recommend it! <br />
+                </small>
+              </p>
+              <time>Jan 18, 2018</time>
+            </div>
+            <div class="bg-dark rounded p-4 m-2 mb-3 text-light twitter">
+              <p>
+                Patrick Martin
+                <img class="img-fluid pb-1" src="../src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                <small>
+                  ShowTrackr is a real gem! I started using it a couple months ago
+                  and it completely changed the way how I watch TV shows. I can
+                  only recommend it! <br />
+                </small>
+              </p>
+              <time>Jan 18, 2018</time>
+            </div>
+            <div class="bg-dark rounded p-4 m-2 mb-3 text-light twitter">
+              <p>
+                Patrick Martin
+                <img class="img-fluid pb-1" src="../src/img/twit.svg" alt="twitter" />
+              </p>
+              <p>
+                <small>
+                  ShowTrackr is a real gem! I started using it a couple months ago
+                  and it completely changed the way how I watch TV shows. I can
+                  only recommend it! <br />
+                </small>
+              </p>
+              <time>Jan 18, 2018</time>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -432,30 +437,30 @@
         <div class="row">
           <div class="col d-flex flex-column text-center">
 
-            <section id="get-started-page" class="">
-              <span class="">Get Started</span>
+            <section id="get-started-page" class="mb-4">
+              <span class="font-weight-light mb-4">Get Started</span>
 
-              <h2 class="">
+              <p class="display-4 font-weight-bold mb-4">
                 Start tracking your TV <br />
                 shows for free
-              </h2>
+              </p>
 
-              <p class="col-6  offset-3">
-                In order to start tracking your TV shows, all you have to do is enter
-                your email address. Everything else will be taken care of by us. All
-                you
+              <p class="mb-4">
+                In order to start tracking your TV shows, all you have to do is enter <br>
+                your email address. Everything else will be taken care of by us. All you <br>
                 have to do is sit back, relax and enjoy your TV shows.
               </p>
             </section>
 
-            <form class=" " action="">
-              <fieldset class="">
-                <label class="" for="email">
+            <form class="d-flex m120" action="">
+              <fieldset class="col-3 offset-4 d-flex flex-column ">
+                <label class="text-primary text-left m-0 font-weight-bold" for="email">
                   Email
                 </label>
-                <input class="" type="email" placeholder="example@gmail.com" />
+                <input class="border-0" type="email" placeholder="example@gmail.com" />
               </fieldset>
-              <button class="" onclick="starttracking()">
+              <button class="bg-primary text-white border border-primary rounded p-1 pl-3 pr-3"
+                onclick="starttracking()">
                 Start tracking
               </button>
             </form>
@@ -466,13 +471,15 @@
 
     <div class="container m60">
       <div class="row">
-        <footer class="col text-center">
-          <a href="//www.twitter.com"><img class="footer__img" src="../src/img/twitter.svg" alt="twitter" /></a>
-          <a href="//www.facebook.com"><img class="footer__img" src="../src/img/facebook.svg" alt="facebook" /></a>
+        <footer class="col text-center opacity-30">
+          <a href="//www.twitter.com"><img class="footer__img m-4 transition__scale" src="../src/img/twitter.svg"
+              alt="twitter" /></a>
+          <a href="//www.facebook.com"><img class="footer__img m-4 transition__scale" src="../src/img/facebook.svg"
+              alt="facebook" /></a>
           <a href="//www.youtube.com">
-            <img class="footer__img" src="../src/img/youtube.svg" alt="youtube" /></a>
+            <img class="footer__img m-4 transition__scale" src="../src/img/youtube.svg" alt="youtube" /></a>
 
-          <p class="footer__text">
+          <p>
             2018 All rights reserved — Designed by Daniel Korpai
           </p>
         </footer>

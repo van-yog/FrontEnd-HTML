@@ -1,22 +1,46 @@
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.opacity-30 {
+  opacity: 0.3;
 }
 
-img {
-  margin: 0;
-  padding: 0;
+.background__mockup {
+  height: 510px;
+  background-image: url("../src/img/web-app-mockup.svg");
 }
 
-.header__item {
-  margin: 0 10px;
+.easy__img {
+  margin-left: -120px;
+  margin-top: 140px;
+  height: 550px;
 }
+
+.community {
+  height: 800px;
+  background-color: rgb(32, 32, 32);
+}
+
+/* Transitions for style */
+
+.main__img:hover,
+.transition__scale:hover {
+  transform: scale(1.3);
+  transition: all 0.2s ease;
+}
+
+.twitter:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+/* Standart padding for design landing */
 
 .m60 {
   margin-bottom: 60px;
 }
 
-.community {
-  height: 900px;
+.m90 {
+  margin-bottom: 90px;
+}
+
+.m120 {
+  margin-bottom: 120px;
 }
