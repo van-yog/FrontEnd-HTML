@@ -21,7 +21,20 @@ film["count of oscars"] = 17;
 alert(film.name + " has " + film["count of oscars"] + " oscars."  );
 
 film.rate_of_vlad = 9.5;
-film.rate_of_user = prompt("А как вы оцениваете фильм от 0 до 10?", "10");
+
+function rateOfUser ()
+{
+  const rating = prompt("А как вы оцениваете фильм от 0 до 10?", "10");
+  if (rating >= 0 && rating <=10) {
+  alert ( rating );
+  }
+  else {
+  alert ( "Sorry, but something in your LIFE you doing WRONG")
+  }
+return rating;
+}
+
+film.rate_of_user = rateOfUser();
 
 alert("He had rate: " + film.rate + "/10 and rate of Vlad: " + film.rate_of_vlad + "/10 \nYour rate is: " +film.rate_of_user);
 
