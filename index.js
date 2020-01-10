@@ -1,40 +1,102 @@
-"use strict"
+"use strict";
 
-let film =  {
+let FavoritFilm = {
   name: "The Lord of the Rings",
-  part1: "The Fellowship of the Ring",
-  part2: "The Two Towers",
-  part3: "The Return of the King",
+  part: [
+    "The Fellowship of the Ring",
+    "The Two Towers",
+    "The Return of the King"
+  ],
   author: "Tolkien",
   year: 2001,
   oscar: true,
-  rate: 9.9,
-  rate_of_vlad : null,
-  rate_of_user: null,
+  rateOfSite: 9.9,
+  rateOfUser: null,
   director: "Peter Jackson",
-  box_office: 2919000000,
-  run_time_minutes: 558,
-  "count of oscars": null,
+  boxOffice: 2919000000,
+  runTimeMinutes: 558,
+  countOfOscar: 17,
+  setRate: function() {
+    do {
+      this.rateOfUser = prompt("А как вы оцениваете фильм от 0 до 10?", "10");
+      if (this.rateOfUser >= 0 && this.rateOfUser <= 10) {
+        break;
+      } else {
+        alert("You enter wrong value");
+      }
+    } while (true);
+  },
+  getRate: function() {
+    if (this.rateOfUser === null) {
+      alert("Can not get rate of the film, start setRate() method");
+    } else {
+      return this.rateOfUser;
+    }
+  },
+  getRecommendation: function() {
+    let rate = Number(this.rateOfUser);
+    switch (rate) {
+      case 10:
+        return `Rate is: ${rate}. It is SUPER FILM`;
+      case 9:
+        return `Rate is: ${rate}. It is VERY GOOD FILM`;
+      case 8:
+        return `Rate is: ${rate}. It is GOOD FILM`;
+      case 7:
+        return `Rate is: ${rate}. It is GOOD FILM`;
+      case 6:
+        return `Rate is: ${rate}. It is NORMAL FILM`;
+      case 5:
+        return `Rate is: ${rate}. It is NORMAL FILM`;
+      case 4:
+        return `Rate is: ${rate}. It is SIMPLE FILM`;
+      case 3:
+        return `Rate is: ${rate}. It is BAD FILM`;
+      case 2:
+        return `Rate is: ${rate}. It is BAD FILM`;
+      case 1:
+        return `Rate is: ${rate}. It is VERY BAD FILM`;
+      case 0:
+        return `Rate is: ${rate}. It is VERY BAD FILM`;
+    }
+  }
+};
+
+function getRecommendation(rate) {
+  switch (rate) {
+    case 10:
+      return `Rate is: ${rate}. It is SUPER FILM`;
+    case 9:
+      return `Rate is: ${rate}. It is VERY GOOD FILM`;
+    case 8:
+      return `Rate is: ${rate}. It is GOOD FILM`;
+    case 7:
+      return `Rate is: ${rate}. It is GOOD FILM`;
+    case 6:
+      return `Rate is: ${rate}. It is NORMAL FILM`;
+    case 5:
+      return `Rate is: ${rate}. It is NORMAL FILM`;
+    case 4:
+      return `Rate is: ${rate}. It is SIMPLE FILM`;
+    case 3:
+      return `Rate is: ${rate}. It is BAD FILM`;
+    case 2:
+      return `Rate is: ${rate}. It is BAD FILM`;
+    case 1:
+      return `Rate is: ${rate}. It is VERY BAD FILM`;
+    case 0:
+      return `Rate is: ${rate}. It is VERY BAD FILM`;
+  }
 }
 
-film["count of oscars"] = 17;
-alert(film.name + " has " + film["count of oscars"] + " oscars."  );
+function startJS() {
+  FavoritFilm.countOfOscar = 17;
 
-film.rate_of_vlad = 9.5;
+  alert(`${FavoritFilm.name} has ${FavoritFilm.countOfOscar} oscars`);
 
-function rateOfUser ()
-{
-  const rating = prompt("А как вы оцениваете фильм от 0 до 10?", "10");
-  if (rating >= 0 && rating <=10) {
-  alert ( rating );
-  }
-  else {
-  alert ( "Sorry, but something in your LIFE you doing WRONG")
-  }
-return rating;
+  FavoritFilm.setRate();
+
+  alert(FavoritFilm.getRecommendation());
+  alert(getRecommendation(Number(FavoritFilm.getRate())));
+  alert(getRecommendation(10));
 }
-
-film.rate_of_user = rateOfUser();
-
-alert("He had rate: " + film.rate + "/10 and rate of Vlad: " + film.rate_of_vlad + "/10 \nYour rate is: " +film.rate_of_user);
-
